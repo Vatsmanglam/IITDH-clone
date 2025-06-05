@@ -1,0 +1,21 @@
+.upcoming-events-section {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 2rem 5%;
+  gap: 1rem;
+
+  &-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  &-content {
+    &-card {
+      width: 33%;
+    }
+  }
+}
