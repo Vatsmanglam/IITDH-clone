@@ -1,0 +1,22 @@
+.student-hightligh-section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  padding: 2rem 5%;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+
+  &-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-content {
+    &-card {
+      padding: 0 0.5rem;
+    }
+  }
+}
