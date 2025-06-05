@@ -5,6 +5,7 @@ import InformationSection from "./sections/Information";
 import NewsSection from "./sections/News";
 import StudentHighlightSection from "./sections/StudentHighlight";
 import UpcomingEvents from "./sections/UpcomingEvents";
+import GallerySection from "./sections/Gallery";
 
 const urls: string[] = [
   "https://www.iitdh.ac.in/sites/default/files/2024-09/banner-01.jpg",
@@ -75,6 +76,7 @@ const HomePage: React.FC = () => {
       <NewsSection />
       <StudentHighlightSection />
       <UpcomingEvents />
+      <GallerySection />
     </div>
   );
 };

@@ -1,0 +1,23 @@
+.gallery-section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  padding: 1rem 5%;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: #f2f2f2;
+
+  &-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-content {
+    &-card {
+      padding: 0 0.5rem;
+    }
+  }
+}
