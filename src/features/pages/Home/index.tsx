@@ -6,6 +6,8 @@ import NewsSection from "./sections/News";
 import StudentHighlightSection from "./sections/StudentHighlight";
 import UpcomingEvents from "./sections/UpcomingEvents";
 import GallerySection from "./sections/Gallery";
+import HighlightedButton from "./components/HighlightedButton";
+import Footer from "./sections/Footer";
 
 const urls: string[] = [
   "https://www.iitdh.ac.in/sites/default/files/2024-09/banner-01.jpg",
@@ -47,6 +49,25 @@ const cardLinks: Omit<CardLinkProps, "even">[] = [
   },
 ];
 
+const collegeStats = [
+  {
+    title: "Students",
+    count: "1298",
+  },
+  {
+    title: "Faculty Members",
+    count: "112",
+  },
+  {
+    title: "Permanent Staff",
+    count: "72",
+  },
+  {
+    title: "Outsourced Staff",
+    count: "68",
+  },
+];
+
 const HomePage: React.FC = () => {
   return (
     <div className="home-page">
@@ -77,6 +98,29 @@ const HomePage: React.FC = () => {
       <StudentHighlightSection />
       <UpcomingEvents />
       <GallerySection />
+      <div className="home-page-stats">
+        {collegeStats.map((stat, index) => (
+          <div key={index} className="home-page-stats-item">
+            <div className="home-page-stats-item-header">{stat.count}</div>
+            <div className="home-page-stats-item-count">{stat.title}</div>
+          </div>
+        ))}
+      </div>
+      <div className="home-page-declaration">
+        <div className="home-page-declaration-card">
+          <h2 className="home-page-declaration-card-title">
+            Creating an Academic Campus with Net Zero in Water, Energy, and
+            Waste [ParashurAma Basaveshwara akshaya Kshetra (PBaK)]
+          </h2>
+          <div className="home-page-declaration-card-text">
+            IIT dhArwAD is committed to create an Academic Campus having net
+            zero in water, energy, and waste by 2030, as mandated by its Board
+            of Governors (BoG)....{" "}
+          </div>
+          <HighlightedButton text="View More" />
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };
