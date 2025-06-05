@@ -1,0 +1,37 @@
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0px 10px 10px 0px rgba(190, 190, 205, 0.5);
+  gap: 0.5rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: #000;
+  border: none;
+
+  &-image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 100%;
+
+    &-link {
+      width: 100%;
+      text-decoration: none;
+      &-description {
+        font-size: 1.15rem;
+        text-overflow: ellipsis;
+        color: #000;
+      }
+    }
+  }
+}

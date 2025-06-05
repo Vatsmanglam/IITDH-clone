@@ -6,6 +6,7 @@ import ScrollingCard, {
   type ScrollingCardRef,
 } from "../../components/ScrollingCard";
 import { useRef } from "react";
+import HighlightedButton from "../../components/HighlightedButton";
 
 const announcements = [
   "List of shortlisted and non-shortlisted candidates for post of Civil Engineer[on contract] & Electrical Engineer[on contract] against Advt. No: IITDh/Admin/SR/34/2025-26 date 25th April 2025 has been released.",
@@ -48,11 +49,7 @@ const InformationSection = () => {
             Generation (3-G) IITs, which were established by the Ministry of
             Education (MoE), Government of India (GoI)....
           </p>
-          <button className="information-section-card-primary-button">
-            <div className="information-section-card-primary-button-text">
-              Find Out More
-            </div>
-          </button>
+          <HighlightedButton text="Find Out More" />
         </div>
       </div>
       <div className="information-section-card">
@@ -93,11 +90,7 @@ const InformationSection = () => {
             </div>
           </div>
           <div className="information-section-card-tertiary-content">
-            <button className="information-section-card-tertiary-content-button">
-              <div className="information-section-card-tertiary-content-button-text">
-                View Past Announcements
-              </div>
-            </button>
+            <HighlightedButton text="View Past Announcements" />
             <div className="information-section-card-tertiary-content-body">
               <ScrollingCard ref={ref} items={announcements} />
             </div>

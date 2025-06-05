@@ -1,0 +1,41 @@
+.highlighted-button {
+  position: relative;
+  text-align: left;
+  border: none;
+  box-shadow: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #111;
+  font-size: 0.78rem;
+  background-color: transparent;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid #111;
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+
+  &-text {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-color: #faa519;
+    border: #faa519;
+
+    .highlighted-button-text {
+      left: -5px;
+      color: white;
+
+      &::after {
+        content: "\f105";
+        position: absolute;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        margin-left: 8px;
+        transform: translateY(-50%);
+        top: 50%;
+        right: -12px;
+      }
+    }
+  }
+}

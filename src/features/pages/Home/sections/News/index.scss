@@ -1,0 +1,24 @@
+.news-section {
+  padding: 1rem 5%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  background-color: #f2f2f2;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #000;
+
+  &-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+  }
+}

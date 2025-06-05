@@ -2,6 +2,7 @@ import Carousel from "react-bootstrap/Carousel";
 import CardLink, { type CardLinkProps } from "./components/CardLink";
 import "./index.scss";
 import InformationSection from "./sections/Information";
+import NewsSection from "./sections/News";
 
 const urls: string[] = [
   "https://www.iitdh.ac.in/sites/default/files/2024-09/banner-01.jpg",
@@ -69,6 +70,7 @@ const HomePage: React.FC = () => {
         ))}
       </div>
       <InformationSection />
+      <NewsSection />
     </div>
   );
 };
