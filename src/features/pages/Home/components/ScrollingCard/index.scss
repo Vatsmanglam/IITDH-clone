@@ -1,0 +1,22 @@
+.scrolling-card {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+
+  &-list {
+    &-item {
+      &-text {
+        font-size: 1.15rem;
+        transition: all 0.3s ease-in-out;
+        color: #89288f;
+        text-decoration: none;
+
+        &:hover {
+          color: #faa519;
+        }
+      }
+      padding: 0.5rem;
+      border-bottom: solid 1px rgba(137, 40, 143, 0.5);
+    }
+  }
+}

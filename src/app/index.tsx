@@ -1,7 +1,8 @@
+import HomePage from "../features/pages/Home";
 import "./index.scss";
 
 const App: React.FC = () => {
-  return <>Hello</>;
+  return <HomePage />;
 };
 
 export default App;
